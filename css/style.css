@@ -41,7 +41,7 @@ ul {
 
 /* radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%); */
 
-#stars {
+/* #stars {
   width: 1px;
   height: 1px;
   background: transparent;
@@ -599,7 +599,7 @@ ul {
   to {
     transform: translateY(-2000px);
   }
-}
+} */
 
 .hidden {
   display: none !important;
@@ -682,6 +682,10 @@ ul {
 
 .btn:hover {
   transform: scale(1.1);
+}
+
+.shadow-dark {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
 
 /* aside */
@@ -1029,4 +1033,34 @@ h3.my-profession {
   border-radius: 10px;
   width: 100%;
   position: relative;
+}
+
+.about .about-content .timeline .timeline-item {
+  position: relative;
+  padding-left: 37px;
+  padding-bottom: 50px;
+}
+
+.about .about-content .timeline .timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.about .about-content .timeline .timeline-item::before {
+  content: " ";
+  width: 1px;
+  position: absolute;
+  height: 100%;
+  left: 7px;
+  top: 0;
+  background-color: var(--skin-color);
+}
+
+.about .about-content .timeline .circle-dot {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: var(--skin-color);
 }
