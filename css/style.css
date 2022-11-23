@@ -909,7 +909,7 @@ ul {
   justify-content: center;
   align-items: center;
   z-index: 10;
-  transition: all 0.3s ease;
+  transition: all 0.8s ease;
 }
 
 .aside .logo {
@@ -963,7 +963,7 @@ ul {
   display: none;
   align-items: center;
   justify-content: center;
-  transition: all 0.3s ease;
+  transition: all 0.8s ease;
 }
 
 .aside .nav-toggler span {
