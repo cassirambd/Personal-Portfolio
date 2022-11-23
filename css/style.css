@@ -22,6 +22,10 @@ body {
   font-family: "Space Mono", monospace;
 }
 
+/* Baloo Tamma 2 
+Sono
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -40,14 +44,41 @@ ul {
 }
 
 .section {
-  background: radial-gradient(ellipse at bottom, #f2f2fc 0%, #f2f2fc 100%);
+  background: var(--bg-black-900);
   min-height: 100vh;
   display: block;
   padding: 0 30px;
   opacity: 1;
+  position: fixed;
+  left: 270px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 
-/* var(--bg-black-900) */
+.section.back-section {
+  z-index: 1;
+}
+
+.section.active {
+  z-index: 2;
+  opacity: 1;
+  animation: slideSection 1s ease;
+}
+
+@keyframes slideSection {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* radial-gradient(ellipse at bottom, #f2f2fc 0%, #f2f2fc 100%) */
 
 #stars {
   width: 1px;
@@ -777,9 +808,13 @@ ul {
   display: none !important;
 }
 
-.main-content {
-  padding-left: 270px;
+.main-container {
+  margin-top: -10px;
 }
+
+/* .main-content {
+  padding-left: 270px;
+} */
 
 .padd-15 {
   padding-left: 15px;
@@ -1005,19 +1040,18 @@ h3.hello {
 }
 
 h3.hello span {
-  font-family: "Sono", sans-serif;
-  font-size: 30px;
+  font-size: 32px;
   font-weight: 700;
   color: var(--skin-color);
 }
 
 /* .name {
-  background-color: #3494E6;
-  background-image: linear-gradient(45deg, #EC6EAD, #3494E6);
+  background-color: #3494e6;
+  background-image: linear-gradient(45deg, #ec6ead, #3494e6);
   background-size: 100%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  -webkit-text-fill-color: transparent; 
+  -webkit-text-fill-color: transparent;
   -moz-text-fill-color: transparent;
 } */
 
