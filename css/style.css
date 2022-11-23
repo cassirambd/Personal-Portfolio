@@ -19,10 +19,15 @@ body.dark {
 body {
   line-height: 1.5;
   font-size: 16px;
-  font-family: "Space Mono", monospace;
+  font-family: "Sono", sans-serif;
   overflow-y: hidden !important;
   overflow-x: hidden !important;
 }
+
+/* .star {
+  z-index: 3;
+  position: absolute;
+} */
 
 /* Baloo Tamma 2 
 Sono
@@ -80,6 +85,8 @@ ul {
     transform: translateX(0%);
   }
 }
+
+/*TODO LO QUE ESTA COMENTADO ROMPE EL BG (position: fixed de .section) ASI COMO ESTÁ ROMPE EL RESPONSIVE*/
 
 /* radial-gradient(ellipse at bottom, #f2f2fc 0%, #f2f2fc 100%) */
 
@@ -811,8 +818,12 @@ ul {
   display: none !important;
 }
 
-.main-container {
+/* .main-container {
   margin-top: -10px;
+} */
+
+.main-content {
+  padding-left: 270px;
 }
 
 .padd-15 {
@@ -847,23 +858,25 @@ ul {
 .section-title h2::before {
   content: " ";
   height: 4px;
-  width: 50px;
+  width: 70px;
   background-color: var(--skin-color);
+  border-radius: 10px;
   position: absolute;
   top: 100%;
   left: 0;
 }
 
-.section-title h2::after {
+/* .section-title h2::after {
   content: " ";
   height: 4px;
   width: 25px;
   background-color: var(--skin-color);
+  border-radius: 10px;
   position: absolute;
   top: 100%;
   left: 0;
   margin-top: 8px;
-}
+} */
 
 .row {
   display: flex;
@@ -976,7 +989,7 @@ ul {
 }
 
 .aside .nav-toggler.open span {
-  background-color: transparent
+  background-color: transparent;
 }
 
 .aside .nav-toggler span::before {
@@ -1050,13 +1063,12 @@ ul {
 }
 
 h3.hello {
-  font-size: 28px;
+  font-size: 33px;
   margin: 15px 0;
-  /* font-family: "Sono", sans-serif; */
 }
 
 h3.hello span {
-  font-size: 32px;
+  font-size: 38px;
   font-weight: 700;
   color: var(--skin-color);
 }
@@ -1072,8 +1084,12 @@ h3.hello span {
 } */
 
 h3.my-profession {
-  font-size: 30px;
-  margin: 15px 0;
+  font-size: 33px;
+  margin: 35px 0;
+}
+
+h3.my-profession span {
+  font-size: 38px;
 }
 
 .typing {
@@ -1123,6 +1139,39 @@ h3.my-profession {
   border-radius: 250px;
   position: relative;
   right: 0;
+}
+
+.home .container .home-info .home-icons {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.home .container .home-info .icon {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  display: block;
+  margin: 30px 10px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.home .container .home-info .icon .fa {
+  font-size: 40px;
+  line-height: 60px;
+  color: var(--skin-color);
+  transition: all 0.3 ease;
+}
+
+.home .container .home-info .icon:hover {
+  background: var(--skin-color);
+}
+
+.home .container .home-info .icon:hover .fa {
+  font-size: 25px;
+  color: var(--text-black-900);
 }
 
 /* about */
@@ -1245,6 +1294,7 @@ h3.my-profession {
 }
 
 .about .about-content h3.title {
+  text-align: center;
   font-size: 24px;
   margin-bottom: 30px;
   font-weight: 600;
@@ -1369,7 +1419,7 @@ h3.my-profession {
 
 .service .service-item .service-item-inner:hover .icon .fa {
   font-size: 25px;
-  color: #d82a79;
+  color: var(--text-black-900);
 }
 
 .service .service-item .service-item-inner h4 {
@@ -1511,11 +1561,29 @@ h3.my-profession {
   padding: 0 50px;
 }
 
+.contact .footer {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.contact .footer p {
+  color: var(--text-black-900);
+  text-align: center;
+  font-size: 14px;
+  margin-top: 40px;
+  margin-bottom: -40px;
+}
+
+.contact .footer p a {
+  color: var(--skin-color);
+}
+
+
 @media (max-width: 1199px) {
   .section .container {
     padding-top: 70px;
   }
-  
+
   .aside {
     left: -270px;
   }

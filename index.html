@@ -10,10 +10,7 @@
     <!-- ===== CSS Files ===== -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/skins/color-1.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
+    <script src="https://kit.fontawesome.com/fda1392f8f.js" crossorigin="anonymous"></script>
     <!-- ===== Style Switcher ===== -->
     <link
       rel="stylesheet"
@@ -46,6 +43,9 @@
     <link rel="stylesheet" href="css/style-switcher.css" />
   </head>
   <body class="dark">
+    <div id="stars" class="star"></div>
+    <div id="stars2" class="star"></div>
+    <div id="stars3" class="star"></div>
     <!-- ===== Main Container Start ===== -->
     <div class="main-container">
       <!-- ===== Aside Start ===== -->
@@ -58,7 +58,7 @@
         </div>
         <ul class="nav">
           <li>
-            <a href="#home" class="active"><i class="fa fa-home"> HOME</i></a>
+            <a href="#home" class="active"><i class="fa fa-home"></i> HOME</a>
           </li>
           <li>
             <a href="#about"><i class="fa fa-user"></i> ABOUT</a>
@@ -78,24 +78,30 @@
       <!-- ===== Main Content Start ===== -->
       <div class="main-content">
         <!-- ===== Home Section Start ===== -->
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
         <section class="home active section" id="home">
           <div class="container">
             <div class="row">
               <div class="home-info padd-15">
                 <h3 class="hello">
-                  Hello, my name is
+                  Hello World, 
+                  <br>
+                  my name is
                   <span class="name typing-name"> </span>
                 </h3>
                 <h3 class="my-profession">
                   I'm a <span class="typing"> </span>
                 </h3>
-                <p>I am a Full Stack Web Developer oriented to Front End...</p>
-                <a download="" href="cv/cv_barbara_cassiram.pdf" class="btn"
-                  >Download CV</a
-                >
+                <div class="row home-icons">
+                <div class="icon">
+                  <a href="https://www.linkedin.com/in/barbara-cassiram/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                </div>
+                <div class="icon">
+                  <a href="https://github.com/cassirambd" target="_blank"><i class="fa fa-github"></i></a>
+                </div>
+                <div class="icon">
+                  <a download="" href="cv/cv_barbara_cassiram.pdf"><i class="fa fa-file-text-o"></i></a>
+                </div>
+              </div>
               </div>
               <div class="home-img padd-15">
                 <img src="img/user.jpg" alt="" />
@@ -190,25 +196,7 @@
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"> 2013 - 2015</i>
-                            </h3>
-                            <h4 class="timeline-tile">
-                              Master in Computer Science
-                            </h4>
-                            <p class="timeline-text">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Delectus laudantium mollitia reiciendis
-                              perferendis! Mollitia ab ad delectus modi
-                              voluptatibus laudantium. Officia, recusandae
-                              temporibus nulla illo magnam mollitia numquam
-                              illum enim.
-                            </p>
-                          </div>
-                          <!-- ===== Timeline Item ===== -->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h3 class="timeline-date">
-                              <i class="fa fa-calendar"> 2013 - 2015</i>
+                              <i class="fa fa-calendar"> 2022 - 2022</i>
                             </h3>
                             <h4 class="timeline-tile">
                               Master in Computer Science
@@ -235,25 +223,7 @@
                           <div class="timeline-item">
                             <div class="circle-dot"></div>
                             <h3 class="timeline-date">
-                              <i class="fa fa-calendar"> 2013 - 2015</i>
-                            </h3>
-                            <h4 class="timeline-tile">
-                              Master in Computer Science
-                            </h4>
-                            <p class="timeline-text">
-                              Lorem ipsum dolor sit amet consectetur adipisicing
-                              elit. Delectus laudantium mollitia reiciendis
-                              perferendis! Mollitia ab ad delectus modi
-                              voluptatibus laudantium. Officia, recusandae
-                              temporibus nulla illo magnam mollitia numquam
-                              illum enim.
-                            </p>
-                          </div>
-                          <!-- ===== Timeline Item ===== -->
-                          <div class="timeline-item">
-                            <div class="circle-dot"></div>
-                            <h3 class="timeline-date">
-                              <i class="fa fa-calendar"> 2013 - 2015</i>
+                              <i class="fa fa-calendar"> 2022 - 2022</i>
                             </h3>
                             <h4 class="timeline-tile">
                               Master in Computer Science
@@ -424,18 +394,18 @@
           <div class="container">
             <div class="row">
               <div class="section-title padd-15">
-                <h2>Contact Me</h2>
+                <h2>Contact</h2>
               </div>
             </div>
-            <h3 class="contact-title padd-15">Contact</h3>
-            <h4 class="contact-sub-title padd-15">I'm at your services</h4>
+            <h3 class="contact-title padd-15">Contact me</h3>
+            <h4 class="contact-sub-title padd-15">I'm at your services!</h4>
             <div class="row">
               <!-- ===== Contact Info Item Start ===== -->
               <div class="contact-info-item padd-15">
                 <div class="icon">
                   <i class="fa fa-phone"></i>
                 </div>
-                <h4>Call me</h4>
+                <h4>Phone</h4>
                 <p>(+54) 91128450190</p>
               </div>
               <!-- ===== Contact Info Item End ===== -->
@@ -444,7 +414,7 @@
                 <div class="icon">
                   <i class="fa fa-map-marker-alt"></i>
                 </div>
-                <h4>Office</h4>
+                <h4>Location</h4>
                 <p>Buenos Aires, Argentina</p>
               </div>
               <!-- ===== Contact Info Item End ===== -->
@@ -463,14 +433,14 @@
                   <i class="fa fa-globe-europe"></i>
                 </div>
                 <h4>Website</h4>
-                <p>www.domain.com</p>
+                <a href="https://cassiramb.vercel.app/" target="_blank"><p>cassiramb.vercel.app</p></a>
               </div>
               <!-- ===== Contact Info Item End ===== -->
             </div>
             <h3 class="contact-title padd-15">Send me an email</h3>
-            <h4 class="contact-sub-title padd-15">
+            <!-- <h4 class="contact-sub-title padd-15">
               I'm very responsive to messages
-            </h4>
+            </h4> -->
             <!-- ===== Contact Form ===== -->
             <form
               action="https://formsubmit.co/cassiram15@gmail.com"
@@ -537,9 +507,12 @@
               </div>
             </form>
             <div class="row">
+              <div class="footer col-12 padd-15">
               <p>
                 © 2022 - Created by
-                <a href="github" target="_blank">Bárbara Cassiram</a>
+                <a href="https://github.com/cassirambd" target="_blank"
+                  >Bárbara Cassiram</a
+                >
               </p>
             </div>
           </div>
