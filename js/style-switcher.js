@@ -4,7 +4,7 @@ styleSwitcherToggle.addEventListener("click", () => {
   document.querySelector(".style-switcher").classList.toggle("open");
 });
 
-// hide setyle - switcher on scroll
+// hide style - switcher on scroll
 window.addEventListener("scroll", () => {
   if (document.querySelector(".style-switcher").classList.contains("open")) {
     ocument.querySelector(".style-switcher").classList.remove("open");

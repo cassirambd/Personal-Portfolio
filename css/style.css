@@ -20,6 +20,8 @@ body {
   line-height: 1.5;
   font-size: 16px;
   font-family: "Space Mono", monospace;
+  overflow-y: hidden !important;
+  overflow-x: hidden !important;
 }
 
 /* Baloo Tamma 2 
@@ -45,7 +47,7 @@ ul {
 
 .section {
   background: var(--bg-black-900);
-  min-height: 100vh;
+  height: 100vh;
   display: block;
   padding: 0 30px;
   opacity: 1;
