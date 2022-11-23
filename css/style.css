@@ -1449,19 +1449,78 @@ h3.my-profession span {
 .portfolio .portfolio-item {
   flex: 0 0 33.33%;
   max-width: 33.33%;
-  margin-bottom: 30px;
+  margin: 0px -5px 30px;
 }
 
 .portfolio .portfolio-item-inner {
-  border: 6px solid var(--bg-black-100);
+  border: 4px solid var(--bg-black-100);
   border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-item-inner:hover {
+  box-shadow: 0 0 20px rgba(48, 46, 77, 0.65);
+  transform: scale(1.1);
 }
 
 .portfolio .portfolio-item-inner .portfolio-img img {
   width: 100%;
   display: block;
+}
+
+.work {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  height: 200px;
+  width: 100%;
+  display: table;
+  overflow: hidden;
+}
+
+.work .desc {
+  display: table-cell;
+  vertical-align: middle;
+  height: 270px;
+  background: var(--text-black-900);
+  opacity: 0;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+}
+.work .desc h3 {
+  font-size: 28px;
+  text-align: center;
+  color: var(--skin-color);
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translate3d(0, -15px, 0);
+  transform: translate3d(0, -15px, 0);
+}
+.work .desc span {
+  text-align: center;
+  display: block;
+  color: var(--bg-black-100);
+  font-size: 22px;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+  transition: transform 0.3s, opacity 0.3s;
+  -webkit-transform: translate3d(0, 15px, 0);
+  transform: translate3d(0, 15px, 0);
+}
+
+.work:hover .desc {
+  opacity: 1;
+}
+.work:hover .desc h3 {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+.work:hover .desc span {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
 }
 
 /* contact */
