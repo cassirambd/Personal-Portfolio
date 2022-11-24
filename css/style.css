@@ -328,7 +328,7 @@ ul {
 #stars:after {
   content: " ";
   position: absolute;
-  top: 100%;
+  top: 1000px;
   width: 1px;
   height: 1px;
   background: transparent;
@@ -644,7 +644,7 @@ ul {
 #stars2:after {
   content: " ";
   position: absolute;
-  top: 100%;
+  top: 1000px;
   width: 2px;
   height: 2px;
   background: transparent;
@@ -760,7 +760,7 @@ ul {
 #stars3:after {
   content: " ";
   position: absolute;
-  top: 100%;
+  top: 1000px;
   width: 3px;
   height: 3px;
   background: transparent;
