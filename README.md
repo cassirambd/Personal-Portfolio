@@ -1,5 +1,5 @@
 # Personal Porfolio 
 
-Portfolio desarrollado con JavaScript, HTML y CSS.
+Personal portfolio developed with JavaScript, HTML and CSS.
 
-![screenshot portfolio](./img/cover.png.png)
+![cover](./img/cover.png)
