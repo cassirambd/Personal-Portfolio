@@ -1,4 +1,4 @@
-# Personal Porfolio 
+## Personal Portfolio 
 
 Personal portfolio developed with JavaScript, HTML and CSS.
 
